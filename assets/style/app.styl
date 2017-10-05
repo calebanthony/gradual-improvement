@@ -1,0 +1,23 @@
+// Specify overrides (theme and/or base variables etc.)
+// See https://vuetifyjs.com/quick-start
+$theme := {
+  primary: #2196F3
+  dark-primary: #1976D2
+  accent: #BBDEFB
+  secondary: #FF9800
+  info: #004BA0
+  warning: #C77800
+  error: #B71C1C
+  success: #2E7D32
+}
+
+$font-size-root := 16px
+
+// Import Vuetify styling
+@require '~vuetify/src/stylus/main.styl'
+
+.page
+  @extend .fade-transition
+
+hr
+  margin-bottom: 1em
